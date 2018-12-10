@@ -79,13 +79,37 @@ h1 {
   width: 100%;
   font-size: 3em;
   text-align: center;
+  margin: 0.5em 0;
 }
 
-#countdownContent::after {
-  font-size: 0.5em;
-  content: " left until Bot Bash Charity Brawl 2018";
+#countdown span {
+  color: #fff;
+  margin: 0 0.2em;
+  position: relative;
+  background: #333;
+  padding: 0.2em;
+  border-radius: 0.2em;
 }
-
+#countdown span::after {
+  color: #333;
+  position: absolute;
+  left: 0;
+  bottom: -1.5em;
+  font-size: 0.375em;
+  width: 100%;
+}
+#countDays::after {
+  content: "days";
+}
+#countHours::after {
+  content: "hours";
+}
+#countMinutes::after {
+  content: "minutes";
+}
+#countSeconds::after {
+  content: "seconds";
+}
 /*
  * Information boxes
  */
