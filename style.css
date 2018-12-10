@@ -20,6 +20,7 @@ header {
   padding: 1em;
   width: 100%;
   background: #333;
+  box-sizing: border-box;
 }
 nav {
   display: none;
