@@ -1,0 +1,175 @@
+/*
+ *  Global
+ */
+
+body {
+  font: 16px "PT Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #f5f5f5;
+}
+
+/*
+ *  Header + navigation
+ */
+
+header {
+  min-height: 1em;
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  background: #333;
+}
+nav {
+  display: none;
+  margin: 1.5em auto 0 auto;
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 2em;
+  font-size: 1.5em;
+  width: 100%;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+#toggleNav {
+  display: block;
+  float: left;
+  font-size: 1em;
+  height: 1em;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+/*
+ *  Main
+ */
+main {
+  margin: 0 auto;
+  width: 100%;
+}
+#stream {
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+#stream iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  text-align: center;
+}
+
+/*
+ * Countdown
+ */
+#countdown {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+}
+
+#countdownContent::after {
+  font-size: 0.5em;
+  content: " left until Bot Bash Charity Brawl 2018";
+}
+
+/*
+ * Information boxes
+ */
+#about {
+  display: flex;
+  flex-flow: row wrap;
+}
+#about section {
+  flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  text-align: justify;
+}
+#about h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#about p a {
+  color: #0000ff;
+  text-decoration: none;
+}
+#about p a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+}
+
+#sponsors {
+  width: 100%;
+  display: flex;
+  flex-direction: row wrap;
+}
+
+#sponsors img {
+  max-width: 50%;
+}
+
+#donateButton {
+  position: relative;
+  background: #fff;
+  border-radius: 1em;
+  color: green;
+  border: 0.5rem solid green;
+  padding: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0px 0.5rem 0px 0px rgba(0, 75, 0, 1);
+  top: 0;
+}
+#donateButton:hover {
+  text-decoration: none;
+  background: #fff;
+  box-shadow: none;
+  top: 0.5rem;
+}
+
+/*
+ * Responsive queries
+ */
+
+@media only screen and (min-width: 800px) {
+  main {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+
+  #about section {
+    flex-basis: 50%;
+  }
+
+  nav {
+    display: table;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  nav a {
+    width: auto;
+    font-size: 1em;
+    float: left;
+  }
+
+  #toggleNav {
+    display: none;
+  }
+}
