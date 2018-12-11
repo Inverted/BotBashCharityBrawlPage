@@ -9,7 +9,7 @@ function leadingZero(number) {
 }
 function updateTimer() {
   let nDiff = timerTarget - Date.now();
-  if(nDiff >= 0) {
+  if (nDiff >= 0) {
     let diff = new Date(nDiff);
     dayCount.innerText = leadingZero(diff.getDate() - 1);
     hourCount.innerText = leadingZero(diff.getHours() - 1);
@@ -27,5 +27,13 @@ document.querySelector("#toggleNav").addEventListener("click", function() {
     document.querySelector("nav").style.display = "none";
   } else {
     document.querySelector("nav").style.display = "table";
+  }
+});
+
+window.addEventListener("resize", function(event) {
+  if (this.document.documentElement.clientWidth >= 800) {
+    document.querySelector("nav").style.display = "table";
+  } else {
+    document.querySelector("nav").style.display = "none";
   }
 });
