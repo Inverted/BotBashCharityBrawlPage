@@ -17,6 +17,7 @@ function updateTimer() {
     secondCount.innerText = leadingZero(diff.getSeconds());
   } else {
     document.querySelector("#countdown").style.display = "none";
+    document.querySelector("#stream").style.display = "block";
   }
 }
 setInterval(updateTimer, 1000);
