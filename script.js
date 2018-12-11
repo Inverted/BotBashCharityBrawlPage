@@ -18,9 +18,10 @@ function updateTimer() {
   } else {
     document.querySelector("#countdown").style.display = "none";
     document.querySelector("#stream").style.display = "block";
+    clearInterval(interval);
   }
 }
-setInterval(updateTimer, 1000);
+let interval = setInterval(updateTimer, 1000);
 
 document.querySelector("#toggleNav").addEventListener("click", function() {
   let cur = document.querySelector("nav").style.display;
