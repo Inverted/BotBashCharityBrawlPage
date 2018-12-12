@@ -80,11 +80,12 @@ h1 {
   width: 100%;
   font-size: 3em;
   text-align: center;
-  margin: 0.5em 0;
+  margin: 0.25em 0;
 }
 
 #countdown p {
   font-size: 2rem;
+  margin: 0.2em;
 }
 
 #countdown span {
@@ -127,6 +128,9 @@ h1 {
   box-sizing: border-box;
   padding: 1em;
   text-align: justify;
+}
+#about img {
+  width: 100%;
 }
 #about h3 {
   font-size: 1.5em;
