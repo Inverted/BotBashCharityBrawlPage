@@ -49,6 +49,9 @@ nav a:hover {
   text-decoration: none;
   width: 100%;
 }
+#toggleNav span {
+  color: transparent;
+}
 /*
  *  Main
  */
@@ -138,7 +141,7 @@ h1 {
 }
 
 #about p a {
-  color: #3e50b4;
+  color: #3e50f4;
   text-decoration: none;
 }
 #about p a:hover {
