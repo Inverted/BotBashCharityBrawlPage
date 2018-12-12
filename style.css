@@ -32,7 +32,7 @@ nav a {
   display: block;
   color: #ccc;
   text-decoration: none;
-  margin-right: 2em;
+  padding: 0 1em;
   font-size: 1.5em;
   width: 100%;
 }
