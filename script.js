@@ -16,7 +16,7 @@ function updateTimer() {
     nDiff -= hours * 3600;
     let minutes = Math.floor(nDiff / 60);
     nDiff -= minutes * 60;
-    let seconds = nDiff;
+    let seconds = Math.floor(nDiff);
 
     dayCount.innerText = leadingZero(days);
     hourCount.innerText = leadingZero(hours);
