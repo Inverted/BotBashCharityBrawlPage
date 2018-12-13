@@ -8,13 +8,20 @@ function leadingZero(number) {
   return ("0" + number).slice(-2);
 }
 function updateTimer() {
-  let nDiff = timerTarget - Date.now();
+  let nDiff = (timerTarget - Date.now()) / 1000;
   if (nDiff >= 0) {
-    let diff = new Date(nDiff);
-    dayCount.innerText = leadingZero(diff.getDate() - 1);
-    hourCount.innerText = leadingZero(diff.getHours() - 1);
-    minuteCount.innerText = leadingZero(diff.getMinutes());
-    secondCount.innerText = leadingZero(diff.getSeconds());
+    let days = Math.floor(nDiff / 86400);
+    nDiff -= days * 86400;
+    let hours = Math.floor(nDiff / 3600);
+    nDiff -= hours * 3600;
+    let minutes = Math.floor(nDiff / 60);
+    nDiff -= minutes * 60;
+    let seconds = nDiff;
+
+    dayCount.innerText = leadingZero(days);
+    hourCount.innerText = leadingZero(hours);
+    minuteCount.innerText = leadingZero(minutes);
+    secondCount.innerText = leadingZero(seconds);
   } else {
     document.querySelector("#countdown").style.display = "none";
     document.querySelector("#stream").style.display = "block";
