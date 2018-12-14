@@ -8,6 +8,8 @@ body {
   padding: 0;
   color: #ddd;
   background: #303030;
+  background-image: url("bg.png");
+  background-repeat: repeat;
 }
 
 /*
@@ -20,6 +22,7 @@ header {
   padding: 1em;
   width: 100%;
   background: #212121;
+  background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
 }
 nav {
@@ -95,7 +98,7 @@ h1 {
   color: #fff;
   margin: 0 0.1em;
   position: relative;
-  background: #555;
+  background: #222;
   padding: 0.1em;
   border-radius: 0.2em;
 }
@@ -125,6 +128,7 @@ h1 {
 #about {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 }
 #about section {
   flex-basis: 100%;
@@ -138,7 +142,7 @@ h1 {
 #about h3 {
   font-size: 1.5em;
   text-align: center;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 #about p a {
@@ -156,11 +160,17 @@ h2 {
 #sponsors {
   width: 100%;
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 2em;
+}
+#sponsors a {
+  flex-basis: 25%;
+  margin-right: 5%;
 }
 
 #sponsors img {
-  max-width: 50%;
+  width: 100%;
 }
 
 #donateButton {
