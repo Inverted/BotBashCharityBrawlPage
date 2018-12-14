@@ -1,4 +1,4 @@
-let timerTarget = new Date("12 Dec 2018 18:00:00 PST");
+let timerTarget = new Date("14 Dec 2018 18:00:00 PST");
 let dayCount = document.querySelector("#countDays");
 let hourCount = document.querySelector("#countHours");
 let minuteCount = document.querySelector("#countMinutes");
